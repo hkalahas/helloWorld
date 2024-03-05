@@ -12,7 +12,7 @@ def about():
 def hello():  # put application's code here
     return render_template('hello.html')
 @app.route('/about-css')
-def aboutcss():
+def about2():
     return render_template('about-css.html')
 
 if __name__ == '__main__':
