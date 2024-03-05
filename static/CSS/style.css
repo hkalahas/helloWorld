@@ -2,7 +2,7 @@ p {
     color: blue;
     font-size: 14px;
 }
-
+/* Making all paragraph texts blue. */
 h2 {
     font-style: italic;
     font-weight: bold;
@@ -15,12 +15,12 @@ table, td, th {
     border-color: darkgrey;
     border-collapse: collapse;
 }
-
+/* Adding a table border with color */
 #bigger {
     font-size: 18px;
     font-style: italic;
 }
-
+/* Adding a class here */
 div.first-div p{
     color: cadetblue;
 }
