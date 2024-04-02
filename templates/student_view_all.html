@@ -29,6 +29,7 @@
 			<th>First Name</th>
             <th>Major</th>
             <th>Email</th>
+            <!--Email added to the view all students page-->
             <th>Is Honors?</th>
             <th>Actions</th>
         </tr>
@@ -39,6 +40,7 @@
             <td>{{ each_student['first_name'] }}</td>
             <td>{{ each_major['major'] }}</td>
             <td>{{ each_student['email'] }}</td>
+            <!--an email is printed for each student in a row-->
             <td>{{ 'Yes' if each_student['is_honors'] == 1 else 'No' }}</td>
             <td>
                 <a href="{{ url_for('student_edit', student_id=each_student['student_id']) }}" class="btn btn-secondary" role="button">Edit</a>

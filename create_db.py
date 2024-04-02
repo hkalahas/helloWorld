@@ -15,14 +15,14 @@ with app.app_context():
         db.session.add(a_major)
         db.session.commit()
 
-    # Initial loading of students first_name, last_name, major_id, birth_date, is_honors
+    # Initial loading of students first_name, last_name, major_id, birth_date, email, is_honors
     students = [
         {'student_id': '1', 'first_name': 'Robert', 'last_name': 'Smith', 'major_id': 3,
             'birth_date': dt.datetime(2007, 6, 1), 'email': 'rsmith@umd.edu', 'is_honors': 1},
         {'student_id': '2', 'first_name': 'Leo', 'last_name': 'Van Munching', 'major_id': 6,
          'birth_date': dt.datetime(2008, 3, 24), 'email': 'lvmh@umd.edu', 'is_honors': 0},
     ]
-
+    #email added to the initial loading of the students table
     for each_student in students:
         print(f'{each_student["first_name"]} {each_student["last_name"]} inserted into Student')
         a_student = Student(first_name=each_student["first_name"], last_name=each_student["last_name"],

@@ -13,6 +13,7 @@ class Student(db.Model):
     gpa = db.Column(db.Float, nullable=False)
     email = db.Column(db.String(100), nullable=False)
     is_honors = db.Column(db.Boolean, nullable=False)
+    #added email in the table
 
     def __init__(self, first_name, last_name, major_id, birth_date, email, is_honors):
         self.first_name = first_name
@@ -23,6 +24,7 @@ class Student(db.Model):
         self.gpa = 0.0
         self.email = email
         self.is_honors = is_honors
+        #added email
 
     def __repr__(self):
         return f"{self.first_name} {self.last_name}"
