@@ -87,6 +87,7 @@ def student_edit(student_id):
             student.num_credits_completed = request.form['num_credits_completed']
             student.gpa = request.form['gpa']
             student.email = request.form['email']
+            #email field added in the update page
             student.is_honors = True if 'is_honors' in request.form else False
 
             db.session.commit()
